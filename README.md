@@ -3,8 +3,8 @@ BookStore Api Developed by using Golang ,Gorilla Mux , Mysql Db and Gorm.
 
 ## Information about Gorm and Gorilla Mux
     -- Gorm-> G-ORM – Golang ORM Package     
-              Currently sitting at 21000 stars (!!!) on Github, gorm is a package developed mostly by Jingzhu, with a few commits from other interested individuals.It is a full-featured ORM and has several features that help us as Go devs.
-              Object Relationship Managers act as brokers between us developers and our underlying database technology. They allow us to essentially work with objects,
+              -- Currently sitting at 21000 stars (!!!) on Github, gorm is a package developed mostly by Jingzhu, with a few commits from other interested individuals.It is a full-featured ORM and has several features that help us as Go devs.
+            --  Object Relationship Managers act as brokers between us developers and our underlying database technology. They allow us to essentially work with objects,
 much as we normally would, and then save these objects without having to craft complex SQL statements.
               
     -- Gorilla Mux->Gorilla Mux is an HTTP request multiplexer. It is used for request routing and dispatching. It is an extension of the standard ServeMux; it implements the http.Handler interface.    
