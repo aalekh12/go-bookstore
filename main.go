@@ -6,6 +6,7 @@ import (
 
 	"github.com/aalekh12/go-bookstore/pkg/routes"
 	"github.com/gorilla/mux"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 func main() {
@@ -13,6 +14,6 @@ func main() {
 	routes.RegisterBookStoreRoures(r)
 	http.Handle("/", r)
 
-	log.Println("HTTP Server started on 9090")
-	http.ListenAndServe(":9090", r)
+	log.Println("HTTP Server started on 8080")
+	log.Fatal(http.ListenAndServe("localhost:8080", r))
 }

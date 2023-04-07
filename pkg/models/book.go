@@ -4,12 +4,12 @@ import (
 	"log"
 
 	"github.com/aalekh12/go-bookstore/pkg/config"
-	"github.com/jinzhu/gorm"
+	"gorm.io/gorm"
 )
 
 type Book struct {
 	gorm.Model
-	Name        string `gorm:""json:"name"`
+	Name        string `json:"name"`
 	Author      string `json:"author"`
 	Publication string `json:"publication"`
 }
@@ -23,7 +23,7 @@ func init() {
 }
 
 func (b *Book) CreateBook() *Book {
-	db.NewRecord(b)
+	//db.NewRecord(b)
 	db.Create(&b)
 	log.Println(b)
 	return b
